@@ -1,0 +1,16 @@
+.header {
+  background-color: var(--color-black);
+  padding: 11px 0 6px;
+  &__wrapper {
+    @include flex-all-sb;
+
+    padding-left: 16px;
+    padding-right: 6px;
+  }
+  &__btn {
+    @include tablet {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+}

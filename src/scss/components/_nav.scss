@@ -1,0 +1,65 @@
+.nav {
+  &__list {
+    @include flex-v-center;
+
+    @include tablet {
+      @include flex-all-center;
+
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__item {
+    margin-right: 32px;
+    &:nth-child(1) {
+      margin-right: 56px;
+
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include tablet {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+  }
+  &__link {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-light);
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: var(--color-silver);
+    }
+
+    @include tablet {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+
+  @include tablet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    height: 100vh;
+    background-color: var(--color-black);
+    overflow-y: scroll;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+}
+
+.menu--active {
+  visibility: visible;
+  opacity: 1;
+}
