@@ -5,7 +5,19 @@
     margin-bottom: 15px;
   }
   &__descr {
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--color-light);
     margin-bottom: 54px;
+
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
+    @include mobile {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
   &__list {
     display: grid;
@@ -14,5 +26,20 @@
   }
   &__item {
     grid-column: 1 span;
+
+    @include tablet {
+      grid-column: 2 span;
+      text-align: center;
+    }
+  }
+
+  @include tablet {
+    padding: 75px 0;
+  }
+  @include small-tablet {
+    padding: 50px 0;
+  }
+  @include mobile {
+    padding: 30px 0;
   }
 }

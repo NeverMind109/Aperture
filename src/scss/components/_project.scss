@@ -1,9 +1,30 @@
 .project {
   position: relative;
+  &__img {
+    @include tablet {
+      height: 500px;
+    }
+    @include small-tablet {
+      height: 400px;
+    }
+    @include mobile {
+      height: 300px;
+    }
+  }
   &__content {
     position: absolute;
     bottom: 0;
     padding: 35px 30px;
+
+    @include tablet {
+      padding: 30px 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 75%;
+    }
+    @include mobile {
+      width: 95%;
+    }
   }
   &__title {
     letter-spacing: 2px;
@@ -15,6 +36,10 @@
     max-width: 500px;
     color: var(--color-silver);
     margin-bottom: 20px;
+
+    @include tablet {
+      max-width: none;
+    }
   }
   &__link {
     padding: 8px 14px 12px 41px;

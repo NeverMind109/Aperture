@@ -131,18 +131,37 @@ a {
   line-height: 42px;
   text-align: center;
   color: var(--color-light);
+
+  @include small-tablet {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  @include mobile {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 .descr {
   font-size: 14px;
   line-height: 20px;
   color: var(--color-silver);
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .text {
   font-size: 13px;
   line-height: 20px;
   color: var(--color-light);
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .btn {
@@ -172,6 +191,13 @@ a {
       background-color: var(--color-black);
     }
   }
+
+  @include mobile {
+    @include mobile {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
 
 .link {
@@ -185,6 +211,7 @@ a {
   padding: 8px 9px 12px 41px;
   border: 1px solid var(--color-light);
   background-color: var(--color-light);
+  transition: border 0.3s ease-in-out;
   &::before {
     content: "";
     position: absolute;
@@ -199,6 +226,11 @@ a {
   }
   &:hover {
     border: 1px solid var(--color-black);
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

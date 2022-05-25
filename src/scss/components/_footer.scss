@@ -6,6 +6,21 @@
     justify-content: space-between;
     border-bottom: 2px solid var(--color-light);
     padding-bottom: 24px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include mobile {
+      text-align: center;
+    }
+  }
+  &__about {
+    @include tablet {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
   &__logo {
     display: inline-block;
@@ -17,9 +32,28 @@
   &__areas {
     margin-left: auto;
     margin-right: 30px;
+
+    @include tablet {
+      width: 50%;
+      margin: 0;
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
   &__pages {
     margin-right: 85px;
+
+    @include tablet {
+      width: 50%;
+      text-align: end;
+      margin: 0;
+    }
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
   }
   &__list-item {
     margin-bottom: 12px;
@@ -40,6 +74,16 @@
     justify-content: space-between;
     border-bottom: 2px solid var(--color-light);
     padding: 36px 0;
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__newsletter-text {
+    @include tablet {
+      margin-bottom: 40px;
+    }
   }
   &__title {
     letter-spacing: 2px;
@@ -51,6 +95,13 @@
     position: relative;
     width: 460px;
     max-height: 50px;
+
+    @include tablet {
+      margin: 0 auto;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
   &__input {
     width: 100%;
@@ -79,8 +130,27 @@
     display: flex;
     justify-content: space-between;
     padding-top: 55px;
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+    }
   }
   &__copy {
     color: var(--color-silver);
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include tablet {
+    padding: 75px 0;
+  }
+  @include small-tablet {
+    padding: 50px 0;
+  }
+  @include mobile {
+    padding: 30px 0;
   }
 }

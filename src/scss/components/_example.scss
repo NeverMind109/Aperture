@@ -14,6 +14,10 @@
     background-image: url("../img/nepal-img.jpg");
     .example__wrapper {
       top: 250px;
+
+      @include small-tablet {
+        top: 60px;
+      }
     }
   }
   &__wrapper {
@@ -21,6 +25,16 @@
     top: 260px;
     right: 60px;
     max-width: 300px;
+
+    @include small-tablet {
+      top: 60px;
+    }
+    @include mobile {
+      max-width: none;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+    }
   }
   &__title {
     letter-spacing: 2px;
@@ -32,5 +46,12 @@
   }
   &__marks {
     bottom: 40px;
+  }
+
+  @include tablet {
+    min-height: 450px;
+  }
+  @include small-tablet {
+    min-height: 300px;
   }
 }

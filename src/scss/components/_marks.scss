@@ -3,6 +3,10 @@
   position: absolute;
   bottom: 48px;
   right: 40px;
+
+  @include mobile {
+    right: 10px;
+  }
 }
 .mark {
   font-size: 12px;

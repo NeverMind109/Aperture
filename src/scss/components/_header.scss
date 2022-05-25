@@ -6,11 +6,19 @@
 
     padding-left: 16px;
     padding-right: 6px;
+
+    @include tablet {
+      padding: 0;
+    }
   }
   &__btn {
     @include tablet {
       font-size: 25px;
       line-height: 35px;
     }
+  }
+
+  @include tablet {
+    padding: 10px 0;
   }
 }

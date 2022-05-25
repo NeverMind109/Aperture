@@ -4,13 +4,20 @@
 
   background-image: url("../img/hero-bg.jpg");
   display: flex;
-  height: 715px;
+  min-height: 715px;
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 76px;
+
+    @include tablet {
+      justify-content: center;
+    }
+    @include small-tablet {
+      padding: 0;
+    }
   }
   &__text {
     text-align: center;
@@ -24,9 +31,29 @@
     text-align: center;
     color: var(--color-light);
     margin-bottom: 18px;
+
+    @include small-tablet {
+      font-size: 45px;
+      line-height: 50px;
+    }
+    @include mobile {
+      font-size: 35px;
+      line-height: 40px;
+    }
   }
   &__descr {
     max-width: 580px;
     text-align: center;
+
+    @include mobile {
+      max-width: none;
+    }
+  }
+
+  @include tablet {
+    min-height: 500px;
+  }
+  @include small-tablet {
+    min-height: 400px;
   }
 }

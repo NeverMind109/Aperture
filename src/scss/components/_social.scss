@@ -10,11 +10,16 @@
       width: 24px;
       height: 24px;
       fill: var(--color-silver);
+      transition: fill 0.3s ease-in-out;
     }
     &:hover {
       svg {
-        color: var(--color-light);
+        fill: var(--color-light);
       }
     }
+  }
+
+  @include tablet {
+    justify-content: center;
   }
 }
