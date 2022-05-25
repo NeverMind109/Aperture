@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Aperture</title>
+  <link
+    rel="preload"
+    href="fonts/PoppinsRegular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="logo header__logo" href="index.html">
+        <img
+          class="logo__img"
+          src="img/logo.svg"
+          alt="Aperture Logo"
+          width="128"
+          height="31"
+        />
+      </a>
+      <nav class="nav" title="Navigation" data-menu>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-menu-item>Business areas</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-menu-item>Featured images</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-menu-item>Gear cage</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-menu-item>Contact</a>
+          </li>
+          <li class="nav__item">
+            <button class="btn-reset btn header__btn" data-menu-item>
+              Get template
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="hero">
+  <div class="container hero__container">
+    <span class="descr hero__text">Photographer & Filmmaker</span>
+    <h1 class="hero__title">Aperture Studios</h1>
+    <p class="descr hero__descr">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
+      sem vitae risus tristique posuere.
+    </p>
+  </div>
+  <div class="marks hero__marks">
+    <div class="mark mark-time">1/2000s</div>
+    <div class="mark mark-aperture">f/11</div>
+    <div class="mark mark-iso">100</div>
+    <div class="mark mark-location">Iceland</div>
+  </div>
+</section>
+ <section class="portfolio">
+  <div class="container portfolio__container">
+    <h2 class="section-title portfolio__title">What we do.</h2>
+    <p class="portfolio__descr">The areas that we’re specialized in.</p>
+    <ul class="list-reset portfolio__list">
+      <li class="portfolio__item project">
+        <img
+          class="project__img"
+          src="img/project-1.jpg"
+          alt="Product Photography"
+          width="576"
+          height="600"
+        />
+        <div class="project__content">
+          <h3 class="project__title">Product Photography</h3>
+          <p class="descr project__descr">
+            Cras commodo consequat orci, in convallis risus egestas non. Nulla
+            efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero
+            ac, cursus quam.
+          </p>
+          <a class="link project__link" href="#">Read more</a>
+        </div>
+      </li>
+      <li class="portfolio__item project">
+        <img
+          class="project__img"
+          src="img/project-2.jpg"
+          alt="Architecture Photography"
+          width="576"
+          height="600"
+        />
+        <div class="project__content">
+          <h3 class="project__title">Architecture Photography</h3>
+          <p class="descr project__descr">
+            Aenean porta neque eget consequat fringilla. Vestibulum ultrices,
+            orci nec egestas pharetra, ligula est semper enim, nec auctor sapien
+            leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo
+            imperdiet nec.
+          </p>
+          <a class="link project__link" href="#">Read more</a>
+        </div>
+      </li>
+      <li class="portfolio__item project">
+        <img
+          class="project__img"
+          src="img/project-3.jpg"
+          alt="Drone Photography"
+          width="576"
+          height="600"
+        />
+        <div class="project__content">
+          <h3 class="project__title">Drone Photography</h3>
+          <p class="descr project__descr">
+            Cras commodo consequat orci, in convallis risus egestas non. Nulla
+            efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero
+            ac, cursus quam.
+          </p>
+          <a class="link project__link" href="#">Read more</a>
+        </div>
+      </li>
+      <li class="portfolio__item project">
+        <img
+          class="project__img"
+          src="img/project-4.jpg"
+          alt="Wildlife Photography"
+          width="576"
+          height="600"
+        />
+        <div class="project__content">
+          <h3 class="project__title">Wildlife Photography</h3>
+          <p class="descr project__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros
+            quis consectetur. Morbi neque ex, condimentum dapibus congue et,
+            vulputate ut ligula. Vestibulum sit amet urna turpis.
+          </p>
+          <a class="link project__link" href="#">Read more</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="example example--fuji">
+  <div class="example__wrapper">
+    <h3 class="descr example__title">Sunset at Mount Fuji</h3>
+    <p class="descr example__descr">
+      Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in
+      convallis risus egestas non.
+    </p>
+  </div>
+  <div class="marks example__marks">
+    <div class="mark mark-time">1''</div>
+    <div class="mark mark-aperture">f/16</div>
+    <div class="mark mark-iso">400</div>
+    <div class="mark mark-location">Japan</div>
+  </div>
+</section>
+ <section class="tools">
+  <div class="tools__wrapper">
+    <div class="tools__content">
+      <span class="descr tools__subtitle">The Gear cage</span>
+      <h2 class="descr tools__title">The tools that we use.</h2>
+      <p class="descr tools__descr">
+        The say that «no place is boring if you’ve had a good night’s sleep and
+        have a pocket full of unexposed film». While we don’t shoot (a lot) of
+        film these days — these are the tools that we actually use everyday to
+        capture the amazing things around us.
+      </p>
+      <a class="link tools__link" href="#">Check it out</a>
+    </div>
+    <div class="tools__image">
+      <img
+        class="tools__img"
+        src="img/tools-img.jpg"
+        alt="The tools that we use"
+        width="720"
+        height="540"
+      />
+      <div class="marks tools__marks">
+        <div class="mark mark-time">0,8''</div>
+        <div class="mark mark-aperture">f/5,6</div>
+        <div class="mark mark-iso">100</div>
+        <div class="mark mark-location">Sweden</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="example example--costa-rica">
+  <div class="example__wrapper">
+    <h3 class="descr example__title">Monstera Leafs</h3>
+    <p class="descr example__descr">
+      Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut
+      faucibus orci tincidunt.
+    </p>
+  </div>
+  <div class="marks example__marks">
+    <div class="mark mark-time">1/400s</div>
+    <div class="mark mark-aperture">f/3,5</div>
+    <div class="mark mark-iso">100</div>
+    <div class="mark mark-location">Costa Rica</div>
+  </div>
+</section>
+ <section class="clients">
+  <div class="container clients__container">
+    <h2 class="section-title clients__title">Past clients</h2>
+    <p class="clients__descr">Trusted by your favourite companies</p>
+    <ul class="list-reset clients__list">
+      <li class="clients__item">
+        <a class="clients__link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#client-1"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="clients__item">
+        <a class="clients__link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#client-2"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="clients__item">
+        <a class="clients__link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#client-3"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="clients__item">
+        <a class="clients__link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#client-4"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="clients__item">
+        <a class="clients__link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#client-5"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="example example--nepal">
+  <div class="example__wrapper">
+    <h3 class="descr example__title">Star fall in the Himalayas</h3>
+    <p class="descr example__descr">
+      Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum
+      dapibus congue et, vulputate ut ligula.
+    </p>
+  </div>
+  <div class="marks example__marks">
+    <div class="mark mark-time">6''</div>
+    <div class="mark mark-aperture">f/11</div>
+    <div class="mark mark-iso">800</div>
+    <div class="mark mark-location">Nepal</div>
+  </div>
+</section>
+ <section class="contact">
+  <div class="container contact__container">
+    <h2 class="section-title contact__title">
+      Need help with photography or videography?
+    </h2>
+    <p class="contact__descr">We’re here for you!</p>
+    <a class="link contact__link" href="#">Get in touch</a>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__about">
+        <a class="logo footer__logo" href="index.html">
+          <img
+            class="logo__img"
+            src="img/logo.svg"
+            alt="Aperture Logo"
+            width="128"
+            height="31"
+          />
+        </a>
+        <p class="text footer__descr">
+          Photographers & videographers capturing the world around us.
+        </p>
+      </div>
+      <ul class="list-reset footer__list footer__areas">
+        <li class="footer__list-item">
+          <span class="footer__list-link footer__list-title"
+            >Business areas</span
+          >
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Product Photography</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Architecture Photography</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Drone Photography</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Wildlife Photography</a>
+        </li>
+      </ul>
+      <ul class="list-reset footer__list footer__pages">
+        <li class="footer__list-item">
+          <span class="footer__list-link footer__list-title">Pages</span>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Gear cage</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Featured images</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Contact</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Style guide</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Instructions</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link" href="#">Changelog</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__newsletter">
+      <div class="footer__newsletter-text">
+        <h3 class="descr footer__title">Subscribe to our newsletter</h3>
+        <p class="text footer__descr">Read about all the things we do.</p>
+      </div>
+      <form class="footer__form" action="#">
+        <input class="input-reset footer__input" type="email" required />
+        <button class="btn-reset btn btn--secondary footer__btn">
+          Subscribe
+        </button>
+      </form>
+    </div>
+    <div class="footer__bottom">
+      <span class="descr footer__copy"
+        >© Aperture Photography, Inc. All rights reserved. Licensing.</span
+      >
+      <ul class="list-reset social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>
