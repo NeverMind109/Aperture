@@ -1,0 +1,38 @@
+.tools {
+  background-color: var(--color-black);
+  height: 540px;
+  &__wrapper {
+    @include flex-all-sb;
+  }
+  &__content {
+    padding-left: 100px;
+  }
+  &__subtitle {
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-silver);
+    margin-bottom: 12px;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--color-light);
+    margin-bottom: 12px;
+  }
+  &__descr {
+    max-width: 514px;
+    color: var(--color-light);
+    margin-bottom: 20px;
+  }
+  &__link {
+    padding: 9px 16px 13px 42px;
+  }
+  &__image {
+    position: relative;
+    width: 50%;
+  }
+  &__img {
+    width: 100%;
+  }
+}

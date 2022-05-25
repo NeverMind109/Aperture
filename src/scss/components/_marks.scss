@@ -1,43 +1,40 @@
 .marks {
   display: flex;
+  position: absolute;
+  bottom: 48px;
+  right: 40px;
 }
 .mark {
   font-size: 12px;
   line-height: 12px;
   height: 16px;
   color: var(--color-light);
+  background-repeat: no-repeat;
+  background-position: left center;
   &:not(:last-child) {
     margin-right: 16px;
   }
   &-time {
     padding-left: 22px;
     background-image: url("../img/time-icon.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
     background-size: 16px 16px;
   }
 
   &-aperture {
     padding-left: 22px;
     background-image: url("../img/aperture-icon.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
     background-size: 16px 16px;
   }
 
   &-iso {
     padding-left: 39px;
     background-image: url("../img/iso-icon.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
     background-size: 32px 16px;
   }
 
   &-location {
     padding-left: 15px;
     background-image: url("../img/location-icon.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
     background-size: 10px 16px;
   }
 }

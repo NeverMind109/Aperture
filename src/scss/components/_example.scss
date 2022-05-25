@@ -1,0 +1,29 @@
+.example {
+  position: relative;
+  @include bg-cover;
+
+  height: 600px;
+  &--fuji {
+    background-image: url("../img/fuji-img.jpg");
+  }
+  &--costa-rica {
+    background-image: url("../img/costa-rica-img.jpg");
+  }
+  &__wrapper {
+    position: absolute;
+    top: 260px;
+    right: 60px;
+    max-width: 300px;
+  }
+  &__title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-light);
+  }
+  &__descr {
+    color: var(--color-silver);
+  }
+  &__marks {
+    bottom: 40px;
+  }
+}
