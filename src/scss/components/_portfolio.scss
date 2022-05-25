@@ -1,0 +1,18 @@
+.portfolio {
+  padding: 107px 0 92px;
+  background-color: var(--color-black);
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__descr {
+    margin-bottom: 54px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+  }
+  &__item {
+    grid-column: 1 span;
+  }
+}

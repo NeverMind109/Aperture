@@ -1,0 +1,22 @@
+.project {
+  position: relative;
+  &__content {
+    position: absolute;
+    bottom: 0;
+    padding: 35px 30px;
+  }
+  &__title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-light);
+    margin-bottom: 7px;
+  }
+  &__descr {
+    max-width: 500px;
+    color: var(--color-silver);
+    margin-bottom: 20px;
+  }
+  &__link {
+    padding: 9px 15px 13px 42px;
+  }
+}
