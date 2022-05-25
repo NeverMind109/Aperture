@@ -1,13 +1,20 @@
 .example {
   position: relative;
+  background-color: var(--color-black);
   @include bg-cover;
 
-  height: 600px;
+  min-height: 600px;
   &--fuji {
     background-image: url("../img/fuji-img.jpg");
   }
   &--costa-rica {
     background-image: url("../img/costa-rica-img.jpg");
+  }
+  &--nepal {
+    background-image: url("../img/nepal-img.jpg");
+    .example__wrapper {
+      top: 250px;
+    }
   }
   &__wrapper {
     position: absolute;

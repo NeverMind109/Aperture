@@ -1,6 +1,6 @@
 .tools {
   background-color: var(--color-black);
-  height: 540px;
+  min-height: 540px;
   &__wrapper {
     @include flex-all-sb;
   }
@@ -31,6 +31,7 @@
   &__image {
     position: relative;
     width: 50%;
+    font-size: 0;
   }
   &__img {
     width: 100%;
