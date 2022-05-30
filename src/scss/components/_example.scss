@@ -5,13 +5,13 @@
 
   min-height: 600px;
   &--fuji {
-    background-image: url("../img/fuji-img.jpg");
+    @include image-set("../img/fuji-img");
   }
   &--costa-rica {
-    background-image: url("../img/costa-rica-img.jpg");
+    @include image-set("../img/costa-rica-img");
   }
   &--nepal {
-    background-image: url("../img/nepal-img.jpg");
+    @include image-set("../img/nepal-img");
     .example__wrapper {
       top: 250px;
 

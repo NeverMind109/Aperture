@@ -636,10 +636,13 @@ a {
 
 .hero {
   position: relative;
+  background-image: url("../img/hero-bg.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/hero-bg.avif" type("image/avif"), "../img/hero-bg.webp" type("image/webp"), "../img/hero-bg.jpg" type("image/jpg"));
+  background-image: image-set("../img/hero-bg.avif" type("image/avif"), "../img/hero-bg.webp" type("image/webp"), "../img/hero-bg.jpg" type("image/jpg"));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/hero-bg.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,12 +790,21 @@ a {
 }
 .example--fuji {
   background-image: url("../img/fuji-img.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/fuji-img.avif" type("image/avif"), "../img/fuji-img.webp" type("image/webp"), "../img/fuji-img.jpg" type("image/jpg"));
+  background-image: image-set("../img/fuji-img.avif" type("image/avif"), "../img/fuji-img.webp" type("image/webp"), "../img/fuji-img.jpg" type("image/jpg"));
 }
 .example--costa-rica {
   background-image: url("../img/costa-rica-img.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/costa-rica-img.avif" type("image/avif"), "../img/costa-rica-img.webp" type("image/webp"), "../img/costa-rica-img.jpg" type("image/jpg"));
+  background-image: image-set("../img/costa-rica-img.avif" type("image/avif"), "../img/costa-rica-img.webp" type("image/webp"), "../img/costa-rica-img.jpg" type("image/jpg"));
 }
 .example--nepal {
   background-image: url("../img/nepal-img.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/nepal-img.avif" type("image/avif"), "../img/nepal-img.webp" type("image/webp"), "../img/nepal-img.jpg" type("image/jpg"));
+  background-image: image-set("../img/nepal-img.avif" type("image/avif"), "../img/nepal-img.webp" type("image/webp"), "../img/nepal-img.jpg" type("image/jpg"));
 }
 .example--nepal .example__wrapper {
   top: 250px;

@@ -12,13 +12,18 @@
       <a class="link tools__link" href="#">Check it out</a>
     </div>
     <div class="tools__image">
-      <img
-        class="tools__img"
-        src="img/tools-img.jpg"
-        alt="The tools that we use"
-        width="720"
-        height="540"
-      />
+      <picture>
+        <source srcset="img/tools-img.avif" type="image/avif" />
+        <source srcset="img/tools-img.webp" type="image/webp" />
+        <img
+          class="tools__img"
+          loading="lazy"
+          src="img/tools-img.jpg"
+          width="720"
+          height="540"
+          alt="The tools that we use"
+        />
+      </picture>
       <div class="marks tools__marks">
         <div class="mark mark-time">0,8''</div>
         <div class="mark mark-aperture">f/5,6</div>

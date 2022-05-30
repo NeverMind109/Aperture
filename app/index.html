@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#111111" />
   <title>Aperture</title>
@@ -92,13 +93,18 @@
     <p class="portfolio__descr">The areas that we’re specialized in.</p>
     <ul class="list-reset portfolio__list">
       <li class="portfolio__item project">
-        <img
-          class="project__img"
-          src="img/project-1.jpg"
-          alt="Product Photography"
-          width="576"
-          height="600"
-        />
+        <picture>
+          <source srcset="img/project-1.avif" type="image/avif" />
+          <source srcset="img/project-1.webp" type="image/webp" />
+          <img
+            class="project__img"
+            loading="lazy"
+            src="img/project-1.jpg"
+            width="576"
+            height="600"
+            alt="Product Photography"
+          />
+        </picture>
         <div class="project__content">
           <h3 class="project__title">Product Photography</h3>
           <p class="descr project__descr">
@@ -110,13 +116,18 @@
         </div>
       </li>
       <li class="portfolio__item project">
-        <img
-          class="project__img"
-          src="img/project-2.jpg"
-          alt="Architecture Photography"
-          width="576"
-          height="600"
-        />
+        <picture>
+          <source srcset="img/project-2.avif" type="image/avif" />
+          <source srcset="img/project-2.webp" type="image/webp" />
+          <img
+            class="project__img"
+            loading="lazy"
+            src="img/project-2.jpg"
+            width="576"
+            height="600"
+            alt="Architecture Photography"
+          />
+        </picture>
         <div class="project__content">
           <h3 class="project__title">Architecture Photography</h3>
           <p class="descr project__descr">
@@ -129,13 +140,18 @@
         </div>
       </li>
       <li class="portfolio__item project">
-        <img
-          class="project__img"
-          src="img/project-3.jpg"
-          alt="Drone Photography"
-          width="576"
-          height="600"
-        />
+        <picture>
+          <source srcset="img/project-3.avif" type="image/avif" />
+          <source srcset="img/project-3.webp" type="image/webp" />
+          <img
+            class="project__img"
+            loading="lazy"
+            src="img/project-3.jpg"
+            width="576"
+            height="600"
+            alt="Drone Photography"
+          />
+        </picture>
         <div class="project__content">
           <h3 class="project__title">Drone Photography</h3>
           <p class="descr project__descr">
@@ -147,13 +163,18 @@
         </div>
       </li>
       <li class="portfolio__item project">
-        <img
-          class="project__img"
-          src="img/project-4.jpg"
-          alt="Wildlife Photography"
-          width="576"
-          height="600"
-        />
+        <picture>
+          <source srcset="img/project-4.avif" type="image/avif" />
+          <source srcset="img/project-4.webp" type="image/webp" />
+          <img
+            class="project__img"
+            loading="lazy"
+            src="img/project-4.jpg"
+            width="576"
+            height="600"
+            alt="Wildlife Photography"
+          />
+        </picture>
         <div class="project__content">
           <h3 class="project__title">Wildlife Photography</h3>
           <p class="descr project__descr">
@@ -198,13 +219,18 @@
       <a class="link tools__link" href="#">Check it out</a>
     </div>
     <div class="tools__image">
-      <img
-        class="tools__img"
-        src="img/tools-img.jpg"
-        alt="The tools that we use"
-        width="720"
-        height="540"
-      />
+      <picture>
+        <source srcset="img/tools-img.avif" type="image/avif" />
+        <source srcset="img/tools-img.webp" type="image/webp" />
+        <img
+          class="tools__img"
+          loading="lazy"
+          src="img/tools-img.jpg"
+          width="720"
+          height="540"
+          alt="The tools that we use"
+        />
+      </picture>
       <div class="marks tools__marks">
         <div class="mark mark-time">0,8''</div>
         <div class="mark mark-aperture">f/5,6</div>
@@ -236,35 +262,55 @@
     <p class="clients__descr">Trusted by your favourite companies</p>
     <ul class="list-reset clients__list">
       <li class="clients__item">
-        <a class="clients__link" href="#">
+        <a
+          class="clients__link"
+          href="#"
+          aria-label="Link to Hill & Hayers Company"
+        >
           <svg>
             <use xlink:href="img/sprite.svg#client-1"></use>
           </svg>
         </a>
       </li>
       <li class="clients__item">
-        <a class="clients__link" href="#">
+        <a
+          class="clients__link"
+          href="#"
+          aria-label="Link to Riksgransen Company"
+        >
           <svg>
             <use xlink:href="img/sprite.svg#client-2"></use>
           </svg>
         </a>
       </li>
       <li class="clients__item">
-        <a class="clients__link" href="#">
+        <a
+          class="clients__link"
+          href="#"
+          aria-label="Link to Studio Cai Company"
+        >
           <svg>
             <use xlink:href="img/sprite.svg#client-3"></use>
           </svg>
         </a>
       </li>
       <li class="clients__item">
-        <a class="clients__link" href="#">
+        <a
+          class="clients__link"
+          href="#"
+          aria-label="Link to Chill Industries Company"
+        >
           <svg>
             <use xlink:href="img/sprite.svg#client-4"></use>
           </svg>
         </a>
       </li>
       <li class="clients__item">
-        <a class="clients__link" href="#">
+        <a
+          class="clients__link"
+          href="#"
+          aria-label="Link to Stockholm Company"
+        >
           <svg>
             <use xlink:href="img/sprite.svg#client-5"></use>
           </svg>
@@ -367,7 +413,11 @@
       </div>
       <form class="footer__form" action="#">
         <input class="input-reset footer__input" type="email" required />
-        <button class="btn-reset btn btn--secondary footer__btn">
+        <button
+          class="btn-reset btn btn--secondary footer__btn"
+          type="submit"
+          aria-label="Subscribe Button"
+        >
           Subscribe
         </button>
       </form>
@@ -378,21 +428,21 @@
       >
       <ul class="list-reset social">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Link to Twitter">
             <svg>
               <use xlink:href="img/sprite.svg#twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Link to Instagram">
             <svg>
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Link to Facebook">
             <svg>
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
